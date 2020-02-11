@@ -23,6 +23,8 @@ class AnimalFarm
 	end
 
   def how_full?
+    @animals ||= []
+
     if(@animals.length == 0)
 			"We're empty"
     elsif(@animals.length == 1)
