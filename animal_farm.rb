@@ -21,4 +21,18 @@ class AnimalFarm
 			food = 'No idea for this animal.  Probably bread'
 		end
 	end
+
+  def how_full?
+    if(@animals.length == 0)
+			"We're empty"
+    elsif(@animals.length == 1)
+      "One lonely animal..."
+    elsif(@animals.length == 2)
+      "We've plenty of room"
+    elsif(@animals.length == 3)
+      "We're nearly full...!"
+    else
+      "No more room at the farm"
+    end
+  end
 end
