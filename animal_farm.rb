@@ -49,4 +49,8 @@ class AnimalFarm
   def sunrise!
     @animals.each {|animal| animal.wake_up! }
   end
+  
+  def sunset!
+    @animals.each {|animal| animal.go_to_sleep! }
+  end
 end
