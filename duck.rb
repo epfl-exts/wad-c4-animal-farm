@@ -1,4 +1,8 @@
+require './flies'
+
 class Duck
+  include Flies
+
   def speak!
     'Quack quack!'
   end
