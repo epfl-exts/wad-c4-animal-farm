@@ -4,7 +4,7 @@ require './horse'
 
 class AnimalFarm
   def welcome(animal)
-    @animals = [] if @animals.nil?
+    @animals ||= []
 
     @animals << animal
   end
@@ -39,6 +39,8 @@ class AnimalFarm
   end
 
   def how_much_room?
+    @animals ||= []
+
     case(@animals.length)
       when 0 then "We're empty"
       when 1 then "One lonely animal..."
