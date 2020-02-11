@@ -6,4 +6,8 @@ module Sleeps
   def wake_up!
     @sleeping = false
   end
+
+  def sleeping?
+    @sleeping
+  end
 end
