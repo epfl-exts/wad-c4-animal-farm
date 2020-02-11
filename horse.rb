@@ -5,6 +5,8 @@ class Horse
   include Runs
   include Sleeps
 
+  AVERAGE_SPEED_IN_KPH = 44
+
   def initialize(name)
     @name = name
   end
