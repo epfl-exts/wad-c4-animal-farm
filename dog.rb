@@ -10,4 +10,8 @@ class Dog
   def speak!
     'Woof!'
   end
+
+  def speed_in_mph
+    AVERAGE_SPEED_IN_KPH * KPH_TO_MPH 
+  end
 end
