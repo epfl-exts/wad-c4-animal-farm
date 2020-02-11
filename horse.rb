@@ -20,7 +20,11 @@ class Horse
   end
 
   def speed_in_mph
-    AVERAGE_SPEED_IN_KPH * KPH_TO_MPH 
+    if(@speed.nil?)
+      AVERAGE_SPEED_IN_KPH * KPH_TO_MPH 
+    else
+      KPH_TO_MPH * @speed unless @speed.nil?
+    end
   end
 
   def self.herd_of_horses
