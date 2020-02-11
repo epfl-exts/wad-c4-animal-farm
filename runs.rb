@@ -8,4 +8,8 @@ module Runs
   def stop!
     @running = false
   end
+
+  def speed=(new_speed)
+    @speed = new_speed
+  end
 end
