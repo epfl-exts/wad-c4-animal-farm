@@ -1,7 +1,9 @@
 require './flies'
+require './sleeps'
 
 class Duck
   include Flies
+  include Sleeps
 
   def speak!
     'Quack quack!'

@@ -1,7 +1,9 @@
 require './runs'
+require './sleeps'
 
 class Horse
   include Runs
+  include Sleeps
 
   def initialize(name)
     @name = name
