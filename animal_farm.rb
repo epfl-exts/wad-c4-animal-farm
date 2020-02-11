@@ -57,4 +57,8 @@ class AnimalFarm
   def all_asleep?
     @animals.all? {|animal| animal.sleeping? }
   end
+  
+  def number_of(type_of_animal)
+    @animals.count {|animal| animal.kind_of?(type_of_animal) }
+  end
 end
