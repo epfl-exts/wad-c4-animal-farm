@@ -45,4 +45,8 @@ class AnimalFarm
       else "No more room at the farm"
     end
   end
+  
+  def sunrise!
+    @animals.each {|animal| animal.wake_up! }
+  end
 end
