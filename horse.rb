@@ -19,6 +19,10 @@ class Horse
     'Neigh!'
   end
 
+  def speed_in_mph
+    AVERAGE_SPEED_IN_KPH * KPH_TO_MPH 
+  end
+
   def self.herd_of_horses
     [Horse.new, Horse.new, Horse.new]
   end
